@@ -4,8 +4,9 @@ class IncCount extends Component{
     super(props)
     this.state={
       count:0
-    }
-   // this.reset =()=>this.setState({count:0});    
+    },
+   // this.reset =()=>this.setState({count:0});  
+   this.startInc = this.startInc.bind(this)  
   }
   
   componentDidMount() {
@@ -14,9 +15,13 @@ class IncCount extends Component{
     // alert('Hi');
     // }
   }
-   startInc(){
-    let interval = setInterval(this.setState({count:this.state.count+1}), 1000);
-    }
+   startInc=()=>{
+     alert('hi');
+    // const timerID = setInterval(()=>{
+    //   this.setState({count:this.state.count+1})
+    // }, 1000);
+   // let interval = setInterval(this.setState({count:this.state.count+1}), 1000);
+    };
   // let interval = setInterval(() => this.timer(), 1000);
   // this.setState({ interval });
 
