@@ -26,6 +26,7 @@ import FuncStyesheet from './funcComponent/stylesheet';
 import FncForm from './Form/form';
 import ClsForm from './Form/clsForm';
 import TimeLifeCycle from './ClassComponent/Component/LifeCycle/time';
+import CounterLifeCycle from './ClassComponent/Component/LifeCycle/counter';
 export default function App() {
   return (
     <div>
@@ -66,6 +67,7 @@ export default function App() {
       {/* <FncForm /> */}
       {/* <ClsForm /> */}
       <TimeLifeCycle />
+      <CounterLifeCycle />
     </div>
   );
 }
