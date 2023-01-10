@@ -8,11 +8,14 @@ class TimeLifeCycle extends Component{
   }
 
   componentDidMount(){
-
+    this.timerID = setInterval(
+      ()=>this.tick(),
+      1000
+    );
   }
   
   componentWillUnmount(){
-    
+    clearInterval(this.timerID);
   }
 
   tick(){
