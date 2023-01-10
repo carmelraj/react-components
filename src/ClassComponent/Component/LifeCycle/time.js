@@ -7,7 +7,13 @@ class TimeLifeCycle extends Component{
     }
   }
 
+  componentDidMount(){
+
+  }
   
+  componentWillUnmount(){
+    
+  }
 
   tick(){
     this.setState({
