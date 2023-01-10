@@ -7,12 +7,12 @@ class IncCount extends Component{
     }
    // this.reset =()=>this.setState({count:0});    
   }
-   startInc(){
-   setInterval(
-     ()=>{ this.setState({count:this.state.count+1});},1000
-   );
+  
+  componentDidMount() {
+    startInc = () =>{
+    alert('Hi');
+    }
   }
-
   // let interval = setInterval(() => this.timer(), 1000);
   // this.setState({ interval });
 
