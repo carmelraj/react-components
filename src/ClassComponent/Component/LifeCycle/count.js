@@ -14,6 +14,7 @@ class CountLifeCycle extends Component{
     return(<>
       
      <p> {this.state.count}</p>
+     <button>Increment</button>&nbsp;<button>Decrement</button><br /><br />
     </>);
   }
 }

@@ -9,11 +9,15 @@ class CounterLifeCycle extends Component{
   }
 
   componentDidMount(){
-
+    this.setState({
+      mount:true
+    });
   }
 
   componentWillUnmount(){
-    
+    this.setState({
+      mount:false
+    });
   }
 
 
@@ -22,8 +26,8 @@ class CounterLifeCycle extends Component{
       <h1>Counter Life Cycle</h1>
        {/* <p>Counter : {this.state.count} </p> */}
        <CountLifeCycle />
-       <button onClick={this.mount}>Mount</button>&nbsp;
-       <button onClick={this.unmout}>Unmount</button>
+       <button onClick={}>Mount</button>&nbsp;
+       <button onClick={}>Unmount</button>
     </>);
   }
 }
