@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-class IncCount extends Component{
+class AutoCount extends Component{
   constructor(props){
     super(props)
     this.state={
@@ -24,7 +24,7 @@ class IncCount extends Component{
   }
   render(){
     return(<>
-      <h1>Increment Count</h1>
+      <h1>Auto Increment Count</h1>
         <p>Count : {this.state.count}</p>
         <button>Start</button>&nbsp;
         <button>Stop</button>&nbsp;
@@ -32,4 +32,4 @@ class IncCount extends Component{
     </>);
   }
 }
-export default IncCount
+export default AutoCount
