@@ -28,8 +28,8 @@ class CounterLifeCycle extends Component{
       <h1>Counter Life Cycle</h1>
        {/* <p>Counter : {this.state.count} </p> */}
        {this.state.mount ? <CountLifeCycle /> : null}
-       <button onClick={this.mountConter}>Mount</button>&nbsp;
-       <button onClick={this.unmountConter}>Unmount</button>
+       <button onClick={this.mountConter} disabled={this.state.mount}>Mount</button>&nbsp;
+       <button onClick={this.unmountConter} disabled={!this.state.mount}>Unmount</button>
     </>);
   }
 }

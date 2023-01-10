@@ -27,6 +27,7 @@ import FncForm from './Form/form';
 import ClsForm from './Form/clsForm';
 import TimeLifeCycle from './ClassComponent/Component/LifeCycle/time';
 import CounterLifeCycle from './ClassComponent/Component/LifeCycle/counter';
+import IncCount from './ClassComponent/Component/LifeCycle/incCount';
 export default function App() {
   return (
     <div>
@@ -68,6 +69,7 @@ export default function App() {
       {/* <ClsForm /> */}
       <TimeLifeCycle />
       <CounterLifeCycle />
+      <IncCount />
     </div>
   );
 }
