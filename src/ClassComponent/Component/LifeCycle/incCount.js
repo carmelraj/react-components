@@ -9,10 +9,14 @@ class IncCount extends Component{
   }
   
   componentDidMount() {
-    startInc = () =>{
+    this.startInc()
+    // startInc=()=>{
+    // alert('Hi');
+    // }
+  }
+   startInc(){
     alert('Hi');
     }
-  }
   // let interval = setInterval(() => this.timer(), 1000);
   // this.setState({ interval });
 
