@@ -5,8 +5,7 @@ class IncCount extends Component{
     this.state={
       count:0
     },
-    this.reset =()=>this.setState({count:0});  
-   this.startInc = this.startInc.bind(this)  
+    this.reset =()=>this.setState({count:0});   
   }
   
   componentDidMount() {
