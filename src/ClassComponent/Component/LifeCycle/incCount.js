@@ -6,7 +6,15 @@ class IncCount extends Component{
       count:0
     }
     this.reset =()=>this.setState({count:0});
+    this.startInc =()=> alert('Hi');
   }
+
+  // startInc=()=>{
+  //        setInterval(
+  //     ()=>this.inc(),
+  //     1000
+  //   );
+  // }
 
   // componentDidMount(){
   //   this.incCount = setInterval(
@@ -15,7 +23,7 @@ class IncCount extends Component{
   //   );
   // }
 
-  // inc(){
+  // const inc=()=>{
   //   this.setState({count:this.state.count+1});
   // }
 
@@ -26,7 +34,7 @@ class IncCount extends Component{
     return(<>
       <h1>Increment Count</h1>
         <p>Count : {this.state.count}</p>
-        <button>Start</button>&nbsp;
+        <button onClick={this.startInc}>Start</button>&nbsp;
         <button>Stop</button>&nbsp;
         <button onClick={this.reset}>Reset</button>
     </>);
