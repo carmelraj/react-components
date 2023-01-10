@@ -30,6 +30,7 @@ import CounterLifeCycle from './ClassComponent/Component/LifeCycle/counter';
 import IncCount from './ClassComponent/Component/LifeCycle/incCount';
 import AutoCount from './ClassComponent/Component/LifeCycle/autoCount';
 import IncOneCount from './ClassComponent/Component/LifeCycle/incCountOne';
+import DecCount from './ClassComponent/Component/LifeCycle/decCount';
 export default function App() {
   return (
     <div>
@@ -74,6 +75,7 @@ export default function App() {
       <AutoCount /> */}
       <IncCount />
       <IncOneCount />
+      <DecCount />
     </div>
   );
 }
