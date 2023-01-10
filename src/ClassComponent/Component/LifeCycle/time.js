@@ -6,6 +6,14 @@ class TimeLifeCycle extends Component{
       date:new Date()
     }
   }
+
+  
+
+  tick(){
+    this.setState({
+      date: new Date()
+    });
+  }
   render(){
     return(<>
       <h1>Time</h1>
