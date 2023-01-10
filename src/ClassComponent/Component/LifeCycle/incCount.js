@@ -5,11 +5,17 @@ class IncCount extends Component{
     this.state={
       count:0
     }
-    this.reset =()=>this.setState({count:0});    
+   // this.reset =()=>this.setState({count:0});    
   }
    startInc(){
-   alert('Hi');
+   setInterval(
+     ()=>{ this.setState({count:this.state.count+1});},1000
+   );
   }
+
+  // let interval = setInterval(() => this.timer(), 1000);
+  // this.setState({ interval });
+
   // startInc=()=>{
   //        setInterval(
   //     ()=>this.inc(),
@@ -24,7 +30,7 @@ class IncCount extends Component{
   //   );
   // }
 
-  // const inc=()=>{
+  // inc(){
   //   this.setState({count:this.state.count+1});
   // }
 

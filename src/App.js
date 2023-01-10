@@ -68,9 +68,9 @@ export default function App() {
       {/* <FuncStyesheet primary={true} /> */}
       {/* <FncForm /> */}
       {/* <ClsForm /> */}
-      <TimeLifeCycle />
+      {/* <TimeLifeCycle />
       <CounterLifeCycle />
-      <AutoCount />
+      <AutoCount /> */}
       <IncCount />
     </div>
   );
