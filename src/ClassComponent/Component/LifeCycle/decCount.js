@@ -15,12 +15,13 @@ class DecCount extends Component{
       clearInterval(this.timerID);
       this.setState({isRunning:false});
     }
+    // else if(this.state.count >0){
+    //   clearInterval(this.timerID);
+    // }
     else{
-      if(this.state.count>1){
     this.timerID = setInterval(()=>{
       this.setState({count:this.state.count-1,isRunning:true})
     }, 1000);
-  }
   }
     };
 
