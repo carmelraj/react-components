@@ -21,6 +21,10 @@ class IncCount extends Component{
     }, 1000);
    // let interval = setInterval(this.setState({count:this.state.count+1}), 1000);
     };
+
+    stopIcon = () =>{
+      clearInterval(timerID);
+    };
   // let interval = setInterval(() => this.timer(), 1000);
   // this.setState({ interval });
 
@@ -50,7 +54,7 @@ class IncCount extends Component{
       <h1>Increment Count</h1>
         <p>Count : {this.state.count}</p>
         <button onClick={this.startInc}>Start</button>&nbsp;
-        <button>Stop</button>&nbsp;
+        <button onClick={this.stopIcon}>Stop</button>&nbsp;
         <button onClick={this.reset}>Reset</button>
     </>);
   }
