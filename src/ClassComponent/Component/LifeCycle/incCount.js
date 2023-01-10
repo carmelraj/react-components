@@ -18,6 +18,7 @@ class IncCount extends Component{
   inc(){
     this.setState({count:this.state.count+1});
   }
+  
   componentWillUnmount(){
     clearInterval(this.incCount);
   }
