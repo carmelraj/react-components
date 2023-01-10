@@ -6,28 +6,30 @@ class CounterLifeCycle extends Component{
     this.state={
       mount:true
     }
+    this.mountConter = () => this.setState({mount:true});
+    this.unmountConter  = () => this.setState({mount:false});
   }
 
-  componentDidMount(){
-    this.setState({
-      mount:true
-    });
-  }
+  // componentDidMount(){
+  //   this.setState({
+  //     mount:true
+  //   });
+  // }
 
-  componentWillUnmount(){
-    this.setState({
-      mount:false
-    });
-  }
+  // componentWillUnmount(){
+  //   this.setState({
+  //     mount:false
+  //   });
+  // }
 
 
   render(){
     return(<>
       <h1>Counter Life Cycle</h1>
        {/* <p>Counter : {this.state.count} </p> */}
-       <CountLifeCycle />
-       <button onClick={}>Mount</button>&nbsp;
-       <button onClick={}>Unmount</button>
+       {this.state.mount ? <CountLifeCycle /> : null}
+       <button onClick={this.mountConter}>Mount</button>&nbsp;
+       <button onClick={this.unmountConter}>Unmount</button>
     </>);
   }
 }
