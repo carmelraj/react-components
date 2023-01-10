@@ -16,14 +16,14 @@ class IncCount extends Component{
     // }
   }
    startInc=()=>{
-    const timerID = setInterval(()=>{
+    this.timerID = setInterval(()=>{
       this.setState({count:this.state.count+1})
     }, 1000);
    // let interval = setInterval(this.setState({count:this.state.count+1}), 1000);
     };
 
     stopIcon = () =>{
-      clearInterval(timerID);
+      clearInterval(this.timerID);
     };
   // let interval = setInterval(() => this.timer(), 1000);
   // this.setState({ interval });
