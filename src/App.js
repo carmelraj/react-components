@@ -25,6 +25,7 @@ import FuncNameListOne from './funcComponent/nameListOne';
 import FuncStyesheet from './funcComponent/stylesheet';
 import FncForm from './Form/form';
 import ClsForm from './Form/clsForm';
+import TimeLifeCycle from './ClassComponent/Component/LifeCycle/time';
 export default function App() {
   return (
     <div>
@@ -63,7 +64,8 @@ export default function App() {
       <FuncNameListOne /> */}
       {/* <FuncStyesheet primary={true} /> */}
       {/* <FncForm /> */}
-      <ClsForm />
+      {/* <ClsForm /> */}
+      <TimeLifeCycle />
     </div>
   );
 }
