@@ -71,7 +71,7 @@ export default function App() {
       {/* <FncForm /> */}
       {/* <ClsForm /> */}
       {/* <TimeLifeCycle /> */}
-      <CounterLifeCycle />
+      {/* <CounterLifeCycle /> */}
       {/* <AutoCount /> */}
       <IncCount />
       <IncOneCount />
