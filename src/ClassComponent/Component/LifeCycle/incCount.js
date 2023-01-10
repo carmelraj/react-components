@@ -5,6 +5,7 @@ class IncCount extends Component{
     this.state={
       count:0
     }
+    this.reset =()=>this.setState({count:0});
   }
 
   componentDidMount(){
@@ -23,7 +24,10 @@ class IncCount extends Component{
   render(){
     return(<>
       <h1>Increment Count</h1>
-        Count : {this.state.count}
+        <p>Count : {this.state.count}</p>
+        <button>Start</button>&nbsp;
+        <button>Stop</button>&nbsp;
+        <button onClick={this.reset}>Reset</button>
     </>);
   }
 }
