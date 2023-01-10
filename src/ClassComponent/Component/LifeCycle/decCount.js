@@ -11,7 +11,7 @@ class DecCount extends Component{
   
   // if (counter > 0) {
    startInc=()=>{
-    if(this.state.isRunning && this.state.count>0){
+    if(this.state.isRunning){
       clearInterval(this.timerID);
       this.setState({isRunning:false});
     }
