@@ -14,4 +14,4 @@ const FuncMemoCompo = ({name})=>{
             
   </>);
 }
-export default FuncMemoCompo
+export default memo(FuncMemoCompo)
