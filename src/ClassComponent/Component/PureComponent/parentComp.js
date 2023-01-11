@@ -5,14 +5,14 @@ class ParentRegComp extends PureComponent {
   constructor() {
     super();
     this.state = {
-      name: 'james'
+      name: 'james',
     };
   }
 
   componentDidMount() {
     setInterval(() => {
       this.setState({
-        name: 'james'
+        name: 'james',
       });
     }, 2000);
   }
