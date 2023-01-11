@@ -13,6 +13,9 @@ class RefClsCompInput extends Component {
   focusInput=()=>{
     this.inputRef.current.focus();
   }
+  getValue = ()=>{
+    console.log(this.inputRef.current.value);
+  }
   render() {
     return (
       <>

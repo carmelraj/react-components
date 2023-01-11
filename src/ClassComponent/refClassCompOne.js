@@ -9,7 +9,7 @@ class RefClsCompOne extends Component{
     // this.inputRef.current.focus()
   }
   clickHandler = () =>{
-    // console.log(this.inputRef.current.value);
+    console.log(this.componentRef.current.getValue());
     this.componentRef.current.focusInput();
   }
   render(){
