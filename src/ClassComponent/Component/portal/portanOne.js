@@ -9,7 +9,7 @@ class ClsPortalComp extends Component{
   render(){
     return ReactDOM.createPortal(
       <h1>portal component</h1>,
-      document.getElementById('root1')
+      document.getElementById('popupModal')
     );
   }
 }
