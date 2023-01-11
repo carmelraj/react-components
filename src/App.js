@@ -31,6 +31,7 @@ import IncCount from './ClassComponent/Component/LifeCycle/incCount';
 import AutoCount from './ClassComponent/Component/LifeCycle/autoCount';
 import IncOneCount from './ClassComponent/Component/LifeCycle/incCountOne';
 import DecCount from './ClassComponent/Component/LifeCycle/decCount';
+import PureComp from './ClassComponent/Component/PureComponent/pureComp';
 export default function App() {
   return (
     <div>
@@ -76,6 +77,7 @@ export default function App() {
       {/* <IncCount /> */}
       {/* <IncOneCount /> */}
       {/* <DecCount /> */}
+      <PureComp />
     </div>
   );
 }
