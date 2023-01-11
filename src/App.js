@@ -35,6 +35,7 @@ import ParentRegComp from './ClassComponent/Component/PureComponent/parentComp';
 import FuncParentCompo from './funcComponent/memo/parent';
 import RefClsComp from './ClassComponent/refClassComp';
 import RefClsCompOne from './ClassComponent/refClassCompOne';
+import FwdRefComponent from './ClassComponent/Component/Ref/forwardRefClsParent';
 export default function App() {
   return (
     <div>
@@ -83,7 +84,8 @@ export default function App() {
       {/* <ParentRegComp /> */}
       {/* <FuncParentCompo /> */}
       {/* <RefClsComp /> */}
-      <RefClsCompOne />
+      {/* <RefClsCompOne /> */}
+      <FwdRefComponent />
     </div>
   );
 }
