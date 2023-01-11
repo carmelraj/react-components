@@ -81,7 +81,7 @@ export default function App() {
       {/* <DecCount /> */}
       {/* <ParentRegComp /> */}
       {/* <FuncParentCompo /> */}
-      <refClsComp />
+      {/* <refClsComp /> */}
     </div>
   );
 }
