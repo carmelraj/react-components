@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 const FuncMemoCompo = ({name})=>{
   console.log('---- child component ----');
   return(<>
