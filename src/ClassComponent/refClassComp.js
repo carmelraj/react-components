@@ -7,11 +7,14 @@ class RefClsComp extends Component{
   componentDidMount(){
     this.inputRef.current.focus()
   }
+  clickHandler = () =>{
+    console.log(this.inputRef.current.value);
+  }
   render(){
     return(<>
       <h1>Ref Class Component</h1>
       <form>
-          <input type="text" ref={this.inputRef} />
+          <input type="text" ref={this.inputRef} /> <button onClick={this.clickHandler}>Click me</button>
       </form>
     </>);
   }
