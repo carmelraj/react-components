@@ -1,21 +1,16 @@
 import React from 'react';
-const FuncMemoCompo = ({text})=>{
+const FuncMemoCompo = ({name})=>{
   console.log('---- child component ----');
   return(<>
      <p>Memo Component</p>
-    {/* {
-      props.map(
-        (item) => {<p>{item.name}</p>
-        );
-    } */}
 
 
-{text.map(todo => { // using props in child component and looping
+{/* {text.map(todo => { 
                 return (
                     <>{todo.name}</>
                 )
-            })}
-
+            })} */}
+{name}
             
   </>);
 }
