@@ -28,13 +28,13 @@ class FuncParentCompo extends Component {
     };
   }
 
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        name: 'james2',
-      });
-    }, 2000);
-  }
+  // componentDidMount() {
+  //   setInterval(() => {
+  //     this.setState({
+  //       name: 'james2',
+  //     });
+  //   }, 2000);
+  // }
   render() {
     console.log('------------ parent component ------------');
     return (

@@ -9,13 +9,13 @@ class ParentRegComp extends PureComponent {
     };
   }
 
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        name: 'james',
-      });
-    }, 2000);
-  }
+  // componentDidMount() {
+  //   setInterval(() => {
+  //     this.setState({
+  //       name: 'james',
+  //     });
+  //   }, 2000);
+  // }
   render() {
     console.log('------------ parent component ------------');
     return (
