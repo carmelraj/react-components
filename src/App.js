@@ -57,8 +57,8 @@ export default function App() {
       <PrevStateCounter />
       <FuncCounter />
       <FuncPrevStateCount /> */}
-      {/* <DeStructuring name="James" age="22" /> */}
-      {/* <DeStructuringClas name="Sam" age="30" /> */}
+      {/* <DeStructuring name="James" age="22" />
+      <DeStructuringClas name="Sam" age="30" /> */}
       {/* <FuncClick />
       <ClsClick /> */}
       {/* <ClsEventBind /> */}
@@ -73,9 +73,9 @@ export default function App() {
       {/* <TimeLifeCycle /> */}
       {/* <CounterLifeCycle /> */}
       {/* <AutoCount /> */}
-      <IncCount />
-      <IncOneCount />
-      <DecCount />
+      {/* <IncCount /> */}
+      {/* <IncOneCount /> */}
+      {/* <DecCount /> */}
     </div>
   );
 }

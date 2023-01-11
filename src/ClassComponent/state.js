@@ -3,7 +3,7 @@ class state extends Component{
   constructor(){
     super()
     this.state = {
-      message:'Welcome Visitor'
+      message:'Welcome Visitor' 
     }
   }
   changeMessage(){

@@ -10,6 +10,7 @@ import React from 'react';
 const DeStructuring = (props) =>{
   const {name,age} = props
   return(<>  
+  <h1>DeStructuring Function</h1>
       {name}, {age}
   </>);
 }
