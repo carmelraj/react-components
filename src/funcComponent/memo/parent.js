@@ -31,7 +31,7 @@ class FuncParentCompo extends Component {
   componentDidMount() {
     setInterval(() => {
       this.setState({
-        name: 'james',
+        name: 'james2',
       });
     }, 2000);
   }
