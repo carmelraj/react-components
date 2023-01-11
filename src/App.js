@@ -33,6 +33,7 @@ import IncOneCount from './ClassComponent/Component/LifeCycle/incCountOne';
 import DecCount from './ClassComponent/Component/LifeCycle/decCount';
 import ParentRegComp from './ClassComponent/Component/PureComponent/parentComp';
 import FuncParentCompo from './funcComponent/memo/parent';
+import refClsComp from './ClassComponent/refClassComp';
 export default function App() {
   return (
     <div>
@@ -79,7 +80,8 @@ export default function App() {
       {/* <IncOneCount /> */}
       {/* <DecCount /> */}
       {/* <ParentRegComp /> */}
-      <FuncParentCompo />
+      {/* <FuncParentCompo /> */}
+      <refClsComp />
     </div>
   );
 }
