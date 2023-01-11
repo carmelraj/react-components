@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 class RegComp extends Component{
   render(){
     return(<>
-      <h1>Pure Component</h1>
+      <h1>Regular Component</h1>
     </>);
   }
 }
