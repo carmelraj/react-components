@@ -14,7 +14,7 @@ class ParentRegComp extends PureComponent {
       this.setState({
         name: 'james',
       });
-    }, 1000);
+    }, 2000);
   }
   render() {
     console.log('------------ parent component ------------');
