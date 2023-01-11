@@ -36,6 +36,8 @@ import FuncParentCompo from './funcComponent/memo/parent';
 import RefClsComp from './ClassComponent/refClassComp';
 import RefClsCompOne from './ClassComponent/refClassCompOne';
 import FwdRefComponent from './ClassComponent/Component/Ref/forwardRefClsParent';
+import ClsPortalComp from './ClassComponent/Component/portal/portanOne';
+import ClsPortalCompTwo from './ClassComponent/Component/portal/portanTwo';
 export default function App() {
   return (
     <div>
@@ -85,7 +87,9 @@ export default function App() {
       {/* <FuncParentCompo /> */}
       {/* <RefClsComp /> */}
       {/* <RefClsCompOne /> */}
-      <FwdRefComponent />
+      {/* <FwdRefComponent /> */}
+      <ClsPortalComp />
+      {/* <ClsPortalCompTwo /> */}
     </div>
   );
 }
