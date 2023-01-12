@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-class ClickIncHOC extends Component{
+class HOCComponent extends Component{
   constructor(){
     super()
     this.state={
