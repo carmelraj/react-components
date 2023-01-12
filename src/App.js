@@ -89,7 +89,7 @@ export default function App() {
       {/* <RefClsComp /> */}
       {/* <RefClsCompOne /> */}
       {/* <FwdRefComponent /> */}
-      <ClsPortalComp />
+      {/* <ClsPortalComp /> */}
       {/* <ClsPortalCompTwo /> */}
     </div>
   );

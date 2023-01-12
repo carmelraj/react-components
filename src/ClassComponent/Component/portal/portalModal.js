@@ -1,36 +1,30 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 class ClsPortalModalComp extends Component{
-  constructor(){
-    super()
-    // this.state = {
-    //   modal : false
-    // }
-  }
 
   // closeModal = ()=>{
   //   this.setState({
   //     modal : false
   //   });
   // }
-  render(){
-    return ReactDOM.createPortal(
+//   render(){
+//     return ReactDOM.createPortal(
     
-        <><p>Modal</p><button onClick={this.closeModal}>Close Modal</button></>
-    ,
-    document.getElementById('popupModal')
-    );
-  }
-}
-
-// render(){
-//   return ReactDOM.createPortal(<>
-//     <h1>portal component</h1>
-//     <button onClick={this.openModal}>Open Modal</button></>
+//         <><p>Modal</p><button onClick={this.closeModal}>Close Modal</button></>
 //     ,
 //     document.getElementById('popupModal')
-//   );
+//     );
+//   }
 // }
-// }
+
+render(){
+  return ReactDOM.createPortal(<>
+    <h1>portal component</h1>
+    <button onClick={this.openModal}>Open Modal</button></>
+    ,
+    document.getElementById('popupModal')
+  );
+}
+}
 
 export default ClsPortalModalComp;
