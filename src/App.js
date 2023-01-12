@@ -96,7 +96,11 @@ export default function App() {
       <ClsPortalCompTwo /> */}
       <ErrorBoundary>
         <FuncHeroComp name="john" />
+        </ErrorBoundary>
+        <ErrorBoundary>
         <FuncHeroComp name="sakthi" />
+        </ErrorBoundary>
+        <ErrorBoundary>
         <FuncHeroComp name="jockers" />
       </ErrorBoundary>
     </div>
