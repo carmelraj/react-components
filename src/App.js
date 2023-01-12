@@ -41,7 +41,8 @@ import ClsPortalCompTwo from './ClassComponent/Component/portal/portanTwo';
 import ClsPortalModalComp from './ClassComponent/Component/portal/portalModal';
 import ErrorBoundary from './funcComponent/funcErrorBoundries';
 import FuncHeroComp from './funcComponent/funcHero';
-import ClickIncHOC from './HOC/click'
+import ClickIncHOC from './HOC/clickCounter';
+import HoverCounter from './HOC/hoverConter';
 export default function App() {
   return (
     <div>
@@ -104,6 +105,7 @@ export default function App() {
         <FuncHeroComp name="jockers" />
       </ErrorBoundary> */}
       <ClickIncHOC />
+      <HoverCounter />
     </div>
   );
 }
