@@ -38,6 +38,7 @@ import RefClsCompOne from './ClassComponent/refClassCompOne';
 import FwdRefComponent from './ClassComponent/Component/Ref/forwardRefClsParent';
 import ClsPortalComp from './ClassComponent/Component/portal/portanOne';
 import ClsPortalCompTwo from './ClassComponent/Component/portal/portanTwo';
+import ClsPortalModalComp from './ClassComponent/Component/portal/portalModal';
 export default function App() {
   return (
     <div>

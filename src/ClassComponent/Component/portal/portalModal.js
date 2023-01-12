@@ -3,13 +3,20 @@ import ReactDOM from 'react-dom';
 class ClsPortalModalComp extends Component{
   constructor(){
     super()
+    // this.state = {
+    //   modal : false
+    // }
   }
 
-  
+  // closeModal = ()=>{
+  //   this.setState({
+  //     modal : false
+  //   });
+  // }
   render(){
     return ReactDOM.createPortal(
     
-        <p>Modal</p>
+        <><p>Modal</p><button onClick={this.closeModal}>Close Modal</button></>
     ,
     document.getElementById('popupModal')
     );
