@@ -10,17 +10,7 @@ class ClsPortalModalComp extends Component{
    
   }
 
-//   render(){
-//     return ReactDOM.createPortal(
-    
-//         <><p>Modal</p><button onClick={this.closeModal}>Close Modal</button></>
-//     ,
-//     document.getElementById('popupModal')
-//     );
-//   }
-// }
-
-click = (prevState) =>{
+click = () =>{
   this.setState({
     click: this.state.click+1
   });
