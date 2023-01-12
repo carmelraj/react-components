@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 class ClickIncHOC extends Component{
   render(){
-    const {click} = this.state
+    const {count} = this.state
     return(<>
-    <button onClick={this.clickHandler}>Click {click}  times</button>
+    <button onClick={this.clickHandler}>Click {count}  times</button>
     </>);
   }
 }

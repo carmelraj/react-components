@@ -3,18 +3,18 @@ class HOCComponent extends Component{
   constructor(){
     super()
     this.state={
-      click:0
+      count:0
     }
   }
   clickHandler = () =>{
     this.setState(prevState=>{
-      return {click:prevState.click+1}
+      return {click:prevState.count+1}
     });
   }
   render(){
     const {click} = this.state
     return(<>
-    <button onClick={this.clickHandler}>Click {click}  times</button>
+    <button onClick={this.clickHandler}>Click {count}  times</button>
     </>);
   }
 }

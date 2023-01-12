@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 class HoverCounter extends Component{
   render(){
-    const {click} = this.state
+    const {count} = this.state
     return(<>
-    <h1 onMouseOver={this.clickHandler}>Hover {click} times</h1>
+    <h1 onMouseOver={this.clickHandler}>Hover {count} times</h1>
     </>);
   }
 }
