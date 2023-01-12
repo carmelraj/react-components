@@ -4,7 +4,9 @@ class ClsPortalModalComp extends Component{
   constructor(){
     super()
     
-    // this.myRef = React.createRef() 
+    this.state={
+      click:0
+    }
    
   }
 
@@ -18,10 +20,19 @@ class ClsPortalModalComp extends Component{
 //   }
 // }
 
+click = (prevState) =>{
+  this.setState({
+    click: this.state.click+1
+  });
+}
+
 render(props){
   return ReactDOM.createPortal(<>
     <h1>Modal Component</h1>
-    <button onClick={this.props.closeModal}>Close Modal</button></>
+   <p>count : { this.state.click}</p>
+    <button onClick={this.click}>Click</button>&nbsp;
+    <button onClick={this.props.closeModal}>Close Modal</button>
+    </>
     ,
     document.getElementById('popupModal')
   );
