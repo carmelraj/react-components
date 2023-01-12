@@ -1,11 +1,4 @@
 import React,{Component} from 'react';
-// const FuncErrorBoundries = (props) =>{
-//   if(props.name == 'jocker'){
-//     throw new error('Not a jocker');
-//   }
-//   return();
-// }
-// export default FuncErrorBoundries
 class ErrorBoundary extends Component{
   constructor(){
     super()

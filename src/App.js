@@ -41,7 +41,7 @@ import ClsPortalCompTwo from './ClassComponent/Component/portal/portanTwo';
 import ClsPortalModalComp from './ClassComponent/Component/portal/portalModal';
 import ErrorBoundary from './funcComponent/funcErrorBoundries';
 import FuncHeroComp from './funcComponent/funcHero';
-
+import ClickIncHOC from './HOC/click'
 export default function App() {
   return (
     <div>
@@ -94,15 +94,16 @@ export default function App() {
       {/* <FwdRefComponent /> */}
       {/* <ClsPortalComp />
       <ClsPortalCompTwo /> */}
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <FuncHeroComp name="john" />
-        </ErrorBoundary>
-        <ErrorBoundary>
-        <FuncHeroComp name="sakthi" />
-        </ErrorBoundary>
-        <ErrorBoundary>
-        <FuncHeroComp name="jocker" />
       </ErrorBoundary>
+      <ErrorBoundary>
+        <FuncHeroComp name="sakthi" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <FuncHeroComp name="jockers" />
+      </ErrorBoundary> */}
+      <ClickIncHOC />
     </div>
   );
 }
