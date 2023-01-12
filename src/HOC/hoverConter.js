@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-class HoverCounter extends Component{
+import HOCComponent from './hocComponent';
+class HOCHoverCounter extends Component{
   render(){
     const {count} = this.state
     return(<>
@@ -7,4 +8,4 @@ class HoverCounter extends Component{
     </>);
   }
 }
-export default HoverCounter
+export default HOCComponent(HOCHoverCounter)

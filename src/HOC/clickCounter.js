@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-class ClickIncHOC extends Component{
+import HOCComponent from './hocComponent';
+class HOCClickComponent extends Component{
   render(){
     const {count} = this.state
     return(<>
@@ -7,4 +8,4 @@ class ClickIncHOC extends Component{
     </>);
   }
 }
-export default ClickIncHOC
+export default HOCComponent(HOCClickComponent)
