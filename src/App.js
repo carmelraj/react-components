@@ -39,7 +39,9 @@ import FwdRefComponent from './ClassComponent/Component/Ref/forwardRefClsParent'
 import ClsPortalComp from './ClassComponent/Component/portal/portanOne';
 import ClsPortalCompTwo from './ClassComponent/Component/portal/portanTwo';
 import ClsPortalModalComp from './ClassComponent/Component/portal/portalModal';
-import FuncErrBrs from './funcComponent/funcErrorBoundries';
+import ErrorBoundary from './funcComponent/funcErrorBoundries';
+import FuncHeroComp from './funcComponent/funcHero';
+
 export default function App() {
   return (
     <div>
@@ -92,8 +94,11 @@ export default function App() {
       {/* <FwdRefComponent /> */}
       {/* <ClsPortalComp />
       <ClsPortalCompTwo /> */}
-      <FuncErrBrs name="john" />
-      <FuncErrBrs name="sakthi" />
+      <ErrorBoundary>
+        <FuncHeroComp name="john" />
+        <FuncHeroComp name="sakthi" />
+        <FuncHeroComp name="jockers" />
+      </ErrorBoundary>
     </div>
   );
 }
