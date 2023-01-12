@@ -1,36 +1,33 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-class ClsPortalCompTwo extends Component{
+import ClsPortalModalComp from './portalModal';
+class ClsPortalCompTwo extends Component {
   constructor(){
     super()
+    this.state = {
+      modal : false,
+      name:'state2'
+    }
+    // this.myRef = React.createRef() 
+  }
+  openModal = () =>{
+    this.setState({
+      modal : true
+    });
   }
 
-  
-  render(){
-    return ReactDOM.createPortal(
-    
-        <p>three div</p>
-    
-      ,
-      document.getElementById('one')
-    );
+  closeModal = () =>{
+    this.setState({
+      modal : false
+    });
+  }
+
+  render() {
+    return (<>
+      <h1>portal component two</h1>
+      {  this.state.modal ? <ClsPortalModalComp closeModal={this.closeModal} state={this.state.name}   /> : null}
+      <button onClick={this.openModal}>Open Modal</button>
+    </>);
   }
 }
-
-// return ReactDOM.createPortal(
-//   <h1>Portal demo</h1>,
-//   document.getElementById('portal')
-// )
-
-// render() {
-  
-//   // Creating portal
-//   return ReactDOM.createPortal(
-//     <button style={{marginLeft: '10px'}}>
-//       Click
-//     </button>,
-//     document.getElementById('portal')
-//   );
-// }
-
 export default ClsPortalCompTwo;

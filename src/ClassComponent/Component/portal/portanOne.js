@@ -5,7 +5,8 @@ class ClsPortalComp extends Component{
   constructor(){
     super()
     this.state = {
-      modal : false
+      modal : false,
+      name:'state1'
     }
     // this.myRef = React.createRef() 
   }
@@ -24,8 +25,8 @@ class ClsPortalComp extends Component{
   
   render(){
     return(<>
-      <h1>portal component</h1>
-     {  this.state.modal ? <ClsPortalModalComp closeModal={this.closeModal}   /> : null}
+      <h1>portal component one</h1>
+     {  this.state.modal ? <ClsPortalModalComp closeModal={this.closeModal} state={this.state.name} /> : null}
       <button onClick={this.openModal}>Open Modal</button></>
      
     );
