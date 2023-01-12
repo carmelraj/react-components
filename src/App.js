@@ -101,7 +101,7 @@ export default function App() {
         <FuncHeroComp name="sakthi" />
         </ErrorBoundary>
         <ErrorBoundary>
-        <FuncHeroComp name="jockers" />
+        <FuncHeroComp name="jocker" />
       </ErrorBoundary>
     </div>
   );
