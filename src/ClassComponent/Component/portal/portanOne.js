@@ -15,11 +15,17 @@ class ClsPortalComp extends Component{
       modal : true
     });
   }
+
+  closeModal = () =>{
+    this.setState({
+      modal : false
+    });
+  }
   
   render(){
     return(<>
       <h1>portal component</h1>
-     {  this.state.modal ? <ClsPortalModalComp   /> : null}
+     {  this.state.modal ? <ClsPortalModalComp closeModal={this.closeModal}   /> : null}
       <button onClick={this.openModal}>Open Modal</button></>
      
     );

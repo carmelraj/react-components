@@ -1,12 +1,13 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 class ClsPortalModalComp extends Component{
+  constructor(){
+    super()
+    
+    // this.myRef = React.createRef() 
+   
+  }
 
-  // closeModal = ()=>{
-  //   this.setState({
-  //     modal : false
-  //   });
-  // }
 //   render(){
 //     return ReactDOM.createPortal(
     
@@ -17,14 +18,16 @@ class ClsPortalModalComp extends Component{
 //   }
 // }
 
-render(){
+render(props){
   return ReactDOM.createPortal(<>
-    <h1>portal component</h1>
-    <button onClick={this.openModal}>Open Modal</button></>
+    <h1>Modal Component</h1>
+    <button onClick={this.props.closeModal}>Close Modal</button></>
     ,
     document.getElementById('popupModal')
   );
 }
 }
+
+
 
 export default ClsPortalModalComp;
