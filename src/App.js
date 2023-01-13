@@ -107,7 +107,7 @@ export default function App() {
       </ErrorBoundary> */}
       {/* <HOCClickComponent name="James" />
       <HOCHoverCounter name="Sam" /> */}
-      <RenderPropsUser name={(isLoggedIn)=> isLoggedIn ? 'James' : 'Guest'} />
+      <RenderPropsUser render={(isLoggedIn)=> isLoggedIn ? 'James' : 'Guest'} />
     </div>
   );m
 }
