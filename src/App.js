@@ -104,8 +104,8 @@ export default function App() {
       <ErrorBoundary>
         <FuncHeroComp name="jockers" />
       </ErrorBoundary> */}
-      <HOCClickComponent />
-      <HOCHoverCounter />
+      <HOCClickComponent name="James" />
+      <HOCHoverCounter name="Sam" />
     </div>
-  );
+  );m
 }

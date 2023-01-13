@@ -4,7 +4,7 @@ class HOCHoverCounter extends Component{
   render(){
     const {count,clickHandler} = this.props
     return(<>
-    <h1 onMouseOver={clickHandler}>Hover {count} times</h1>
+    <h1 onMouseOver={clickHandler}>{this.props.name} Hover {count} times</h1>
     </>);
   }
 }

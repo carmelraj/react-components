@@ -13,7 +13,11 @@ const HOCComponent = (OriginalComponent) => {
       });
     }
     render() {
-      return <OriginalComponent name="James" count={this.state.count} clickHandler={this.clickHandler} />;
+      return <OriginalComponent 
+      count={this.state.count} 
+      clickHandler={this.clickHandler} 
+      {...this.props}
+      />
     }
   }
   return NewComponent;
