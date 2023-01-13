@@ -43,6 +43,7 @@ import ErrorBoundary from './funcComponent/funcErrorBoundries';
 import FuncHeroComp from './funcComponent/funcHero';
 import HOCClickComponent from './HOC/clickCounter';
 import HOCHoverCounter from './HOC/hoverConter';
+import RenderPropsUser from './RenderProps/user'
 export default function App() {
   return (
     <div>
@@ -104,8 +105,9 @@ export default function App() {
       <ErrorBoundary>
         <FuncHeroComp name="jockers" />
       </ErrorBoundary> */}
-      <HOCClickComponent name="James" />
-      <HOCHoverCounter name="Sam" />
+      {/* <HOCClickComponent name="James" />
+      <HOCHoverCounter name="Sam" /> */}
+      <RenderPropsUser name={(isLoggedIn)=> isLoggedIn ? 'James' : 'Guest'} />
     </div>
   );m
 }
