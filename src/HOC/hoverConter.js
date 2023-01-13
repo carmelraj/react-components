@@ -8,4 +8,4 @@ class HOCHoverCounter extends Component{
     </>);
   }
 }
-export default HOCComponent(HOCHoverCounter)
+export default HOCComponent(HOCHoverCounter,5)

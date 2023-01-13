@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-const HOCComponent = (OriginalComponent) => {
+const HOCComponent = (OriginalComponent,countNum) => {
   class NewComponent extends Component {
     constructor(){
       super()
@@ -9,7 +9,7 @@ const HOCComponent = (OriginalComponent) => {
     }
     clickHandler = () =>{
       this.setState(prevState=>{
-        return {count:prevState.count+1}
+        return {count:prevState.count+countNum}
       });
     }
     render() {

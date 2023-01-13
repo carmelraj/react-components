@@ -8,4 +8,4 @@ class HOCClickComponent extends Component{
     </>);
   }
 }
-export default HOCComponent(HOCClickComponent)
+export default HOCComponent(HOCClickComponent,5)
