@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const UserContext = React.createContext()
 
-const ContextProvide = UserContext.provider
+const ContextProvider = UserContext.provider
 const ContextConsumer = UserContext.consumer
 // class UserContext extends Component {
 //   render() {
@@ -10,4 +10,4 @@ const ContextConsumer = UserContext.consumer
 //   }
 // }
 // export default UserContext;
-export {ContextProvide,ContextConsumer}
+export {ContextProvider,ContextConsumer}

@@ -47,7 +47,7 @@ import RenderPropsUser from './RenderProps/user';
 import RenderPropsCounter from './RenderProps/counter';
 import ClickCounter from './RenderProps/clickCounter';
 import HoverCounter from './RenderProps/hoverCounter';
-import UserContext from './Context/userContext';
+import {ContextProvider} from './Context/userContext';
 import ComponentC from './Context/componentC';
 export default function App() {
   return (
@@ -130,9 +130,9 @@ export default function App() {
           <HoverCounter count={count} incrementCounter={incrementCounter} />
       )}
       </RenderPropsCounter> */}
-      <UserContext name="James"> 
+      <ContextProvider > 
         <ComponentC />
-      </UserContext>
+      </ContextProvider>
     </div>
   );
   m;
