@@ -47,6 +47,8 @@ import RenderPropsUser from './RenderProps/user';
 import RenderPropsCounter from './RenderProps/counter';
 import ClickCounter from './RenderProps/clickCounter';
 import HoverCounter from './RenderProps/hoverCounter';
+import UserContext from './Context/userContext';
+import ComponentC from './Context/componentC';
 export default function App() {
   return (
     <div>
@@ -118,7 +120,7 @@ export default function App() {
        <RenderPropsCounter render={(count, incrementCounter)=>(
           <HoverCounter count={count} incrementCounter={incrementCounter} />
       )} /> */}
-        <RenderPropsCounter>
+      {/* <RenderPropsCounter>
         {(count, incrementCounter)=>(
           <ClickCounter count={count} incrementCounter={incrementCounter} />
       )}
@@ -127,7 +129,11 @@ export default function App() {
       {(count, incrementCounter)=>(
           <HoverCounter count={count} incrementCounter={incrementCounter} />
       )}
-      </RenderPropsCounter>
+      </RenderPropsCounter> */}
+      <UserContext name="James"> 
+        <ComponentC />
+      </UserContext>
     </div>
-  );m
+  );
+  m;
 }
