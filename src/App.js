@@ -130,7 +130,7 @@ export default function App() {
           <HoverCounter count={count} incrementCounter={incrementCounter} />
       )}
       </RenderPropsCounter> */}
-      <ContextProvider > 
+      <ContextProvider> 
         <ComponentC />
       </ContextProvider>
     </div>
