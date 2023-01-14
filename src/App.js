@@ -112,12 +112,22 @@ export default function App() {
       <HOCHoverCounter name="Sam" /> */}
       {/* <RenderPropsUser render={(isLoggedIn)=> isLoggedIn ? 'James' : 'Guest'} /> */}
 
-      <RenderPropsCounter render={(count, incrementCounter)=>(
+      {/* <RenderPropsCounter render={(count, incrementCounter)=>(
           <ClickCounter count={count} incrementCounter={incrementCounter} />
       )} />
        <RenderPropsCounter render={(count, incrementCounter)=>(
           <HoverCounter count={count} incrementCounter={incrementCounter} />
-      )} />
+      )} /> */}
+        <RenderPropsCounter>
+        {(count, incrementCounter)=>(
+          <ClickCounter count={count} incrementCounter={incrementCounter} />
+      )}
+        </RenderPropsCounter>
+      <RenderPropsCounter>
+      {(count, incrementCounter)=>(
+          <HoverCounter count={count} incrementCounter={incrementCounter} />
+      )}
+      </RenderPropsCounter>
     </div>
   );m
 }

@@ -15,7 +15,8 @@ class RenderPropsCounter extends Component{
   render(){
     
     return(<>
-      {this.props.render(this.state.count,this.incrementCounter)}
+      {/* {this.props.render(this.state.count,this.incrementCounter)} */}
+      {this.props.children(this.state.count,this.incrementCounter)}
     </>);
   }
 }
