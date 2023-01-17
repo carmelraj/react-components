@@ -49,6 +49,7 @@ import ClickCounter from './RenderProps/clickCounter';
 import HoverCounter from './RenderProps/hoverCounter';
 import {ContextProvider} from './Context/userContext';
 import ComponentC from './Context/componentC';
+import FuncCounter from './funcComponent/counter';
 export default function App() {
   return (
     <div>
@@ -71,10 +72,10 @@ export default function App() {
       {/* <PropsFuncs ars='[1,2,3]' /> */}
       {/* <ArraysFunc />
       <ArrayClass /> */}
-      {/* <ClsCounter />
+      <ClsCounter />
       <PrevStateCounter />
       <FuncCounter />
-      <FuncPrevStateCount /> */}
+      <FuncPrevStateCount />
       {/* <DeStructuring name="James" age="22" />
       <DeStructuringClas name="Sam" age="30" /> */}
       {/* <FuncClick />
@@ -130,10 +131,9 @@ export default function App() {
           <HoverCounter count={count} incrementCounter={incrementCounter} />
       )}
       </RenderPropsCounter> */}
-      <ContextProvider value="James"> 
+      {/* <ContextProvider value="James"> 
         <ComponentC />
-      </ContextProvider>
+      </ContextProvider> */}
     </div>
   );
-  m;
 }

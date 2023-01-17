@@ -4,6 +4,9 @@ const FuncPrevStateCount = () =>{
 
   function incrementCount(){
     setCount(prevCount => prevCount+1);
+    // for (let i=0; i<5; i++){
+    //   setCount(prevCount => prevCount+1);
+    // }
   }
 
   function prevStateCount(){
@@ -12,6 +15,7 @@ const FuncPrevStateCount = () =>{
     incrementCount();
     incrementCount();
     incrementCount();
+    
   }
   return(<><h2>Function Prev State</h2>
   <p>Count : {count}</p>
