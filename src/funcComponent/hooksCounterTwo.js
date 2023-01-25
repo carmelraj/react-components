@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 const HooksCounterTwo = () =>{
-  const [item,setItem] = useState([]);
+  const [item,setItem] = useState([])
 
   
 const addItem = () =>{
@@ -10,9 +10,9 @@ const addItem = () =>{
   return(<><h2>Hooks Counter Two</h2>
     <button onClick={addItem}>Click Me</button>
     {
-      item.map(item=>{
+      item.map(item=>(
         <p key={item.id}>{item.value}</p>
-      })
+        ))
     }
   </>);
 }
