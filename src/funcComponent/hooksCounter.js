@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-const HooksCounter = () =>{
+const HooksCounterOne = () =>{
   const [name,setName] = useState({firstName:'', lastName:''});
 
   
@@ -17,4 +17,4 @@ const HooksCounter = () =>{
   <p>{JSON.stringify(name)}</p>
   </>);
 }
-export default HooksCounter
+export default HooksCounterOne

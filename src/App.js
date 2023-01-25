@@ -50,7 +50,7 @@ import HoverCounter from './RenderProps/hoverCounter';
 import {ContextProvider} from './Context/userContext';
 import ComponentC from './Context/componentC';
 import FuncCounter from './funcComponent/counter';
-import HooksCounter from './funcComponent/hooksCounter';
+import HooksCounterOne from './funcComponent/hooksCounter';
 export default function App() {
   return (
     <div>
@@ -135,7 +135,7 @@ export default function App() {
       {/* <ContextProvider value="James"> 
         <ComponentC />
       </ContextProvider> */}
-      <HooksCounter />
+      <HooksCounterOne />
     </div>
   );
 }
