@@ -4,7 +4,7 @@ const HooksCounterTwo = () =>{
 
   
 const addItem = () =>{
-  setItem([...item, {id:item.length, value:Math.floor(Math.random() * 10)+1}])
+  setItem([...item, { id:item.length, value:Math.floor(Math.random() * 10) + 1 }])
 }
  
   return(<><h2>Hooks Counter Two</h2>
