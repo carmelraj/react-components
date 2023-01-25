@@ -51,6 +51,7 @@ import {ContextProvider} from './Context/userContext';
 import ComponentC from './Context/componentC';
 import FuncCounter from './funcComponent/counter';
 import HooksCounterOne from './funcComponent/hooksCounterOne';
+import HooksCounterTwo from './funcComponent/hooksCounterTwo';
 export default function App() {
   return (
     <div>
@@ -135,7 +136,8 @@ export default function App() {
       {/* <ContextProvider value="James"> 
         <ComponentC />
       </ContextProvider> */}
-      <HooksCounterOne />
+      {/* <HooksCounterOne /> */}
+      <HooksCounterTwo />
     </div>
   );
 }
